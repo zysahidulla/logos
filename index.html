@@ -1413,7 +1413,12 @@ function resize() {
   canvas.height = container.clientHeight * dpr;
   canvas.style.width = container.clientWidth + 'px';
   canvas.style.height = container.clientHeight + 'px';
+
+  // Reset any existing transform before applying the device-pixel ratio;
+  // otherwise the canvas keeps stacking scaling on top of itself.
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
   ctx.scale(dpr, dpr);
+
   updateInteractionHint();
   render();
 }
@@ -2606,7 +2611,8 @@ function simulate() {
 }
 
 function render() {
-  ctx.clearRect(0,0,canvas.width,canvas.height);
+  ctx.setTransform(1, 0, 0, 1, 0, 0);
+  ctx.clearRect(0, 0, canvas.width, canvas.height);
   
   // Update zoom indicator
   const zoomIndicator = document.getElementById('zoom-indicator');
