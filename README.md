@@ -1,6 +1,6 @@
-# LOGOS
+# Logos
 
-LOGOS is a browser-based digital logic circuit simulator. Build circuits by placing logic gates and input/output components on an interactive canvas, connect them with wires, and observe the circuit's output in real time.
+Logos is a browser-based digital logic circuit simulator. Build circuits by placing logic gates and input/output components on an interactive canvas, connect them with wires, and observe the circuit's output in real time.
 
 ## Features
 
