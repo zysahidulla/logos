@@ -82,4 +82,4 @@ logos-sim/
 
 ## License
 
-No license file is currently included in this repository.
+This project is released under the MIT License. See [LICENSE](LICENSE) for the full license text.
