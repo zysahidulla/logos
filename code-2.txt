@@ -96,7 +96,9 @@
       user-select: none;
     }
 
-    /* TOP NAVIGATION */
+    /* ────────────────────────────────────────────────
+       TOP NAVIGATION
+       ──────────────────────────────────────────────── */
     #top-nav {
       height: 50px;
       display: flex;
@@ -183,7 +185,9 @@
     
     .divider { width: 1px; height: 20px; background-color: var(--border-color); margin: 0 4px; }
 
-    /* MAIN WORKSPACE LAYOUT */
+    /* ────────────────────────────────────────────────
+       MAIN WORKSPACE LAYOUT
+       ──────────────────────────────────────────────── */
     #workspace {
       display: flex;
       flex: 1;
@@ -254,7 +258,9 @@
       transition: all 0.2s;
     }
 
-    #btn-right-panel-toggle { margin-left: auto; }
+    #btn-right-panel-toggle {
+      margin-left: auto;
+    }
 
     #btn-right-panel-toggle:hover,
     #btn-right-panel-toggle:focus,
@@ -276,7 +282,9 @@
       background: rgba(0, 0, 0, 0.25);
     }
 
-    #btn-right-panel-show.visible { display: inline-flex; }
+    #btn-right-panel-show.visible {
+      display: inline-flex;
+    }
 
     #btn-components-toggle {
       display: none;
@@ -326,7 +334,9 @@
 
     .panel-content { padding: 16px 20px; overflow-y: auto; flex: 1; min-height: 0; -webkit-overflow-scrolling: touch; }
 
-    /* TOOLBOX ITEMS */
+    /* ────────────────────────────────────────────────
+       TOOLBOX ITEMS
+       ──────────────────────────────────────────────── */
     .category-title {
       font-size: 0.65rem; font-weight: 600; letter-spacing: 1px;
       color: var(--text-muted); text-transform: uppercase;
@@ -353,7 +363,9 @@
     .gate-tool-name { font-size: 0.8rem; font-weight: 500; color: var(--text-main); }
     .gate-tool-ports { font-size: 0.7rem; font-family: 'JetBrains Mono', monospace; color: var(--text-dim); }
 
-    /* CANVAS & STATUS BAR */
+    /* ────────────────────────────────────────────────
+       CANVAS & STATUS BAR
+       ──────────────────────────────────────────────── */
     #canvas-container {
       flex: 1; position: relative;
       background-color: var(--bg-canvas);
@@ -405,7 +417,9 @@
       z-index: 1;
     }
 
-    #mobile-section-nav::-webkit-scrollbar { display: none; }
+    #mobile-section-nav::-webkit-scrollbar {
+      display: none;
+    }
 
     .mobile-quick-btn {
       flex: 0 0 auto;
@@ -468,7 +482,9 @@
     }
     #counts, #zoom-indicator { white-space: nowrap; }
 
-    /* PROPERTIES / TRUTH TABLE */
+    /* ────────────────────────────────────────────────
+       PROPERTIES / TRUTH TABLE
+       ──────────────────────────────────────────────── */
     .empty-state { font-size: 0.8rem; color: var(--text-muted); }
 
     .prop-group { margin-bottom: 20px; }
@@ -512,7 +528,11 @@
       margin-bottom: 10px;
     }
 
-    .browser-list { display: flex; flex-direction: column; gap: 10px; }
+    .browser-list {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+    }
 
     .browser-card {
       border: 1px solid var(--border-light);
@@ -521,12 +541,27 @@
       padding: 12px;
     }
 
-    .browser-card.disabled { opacity: 0.72; border-style: dashed; }
+    .browser-card.disabled {
+      opacity: 0.72;
+      border-style: dashed;
+    }
 
-    .browser-meta { display: flex; justify-content: space-between; align-items: center; gap: 10px; margin-bottom: 8px; }
-    .browser-name { font-size: 0.86rem; font-weight: 600; color: var(--text-main); }
+    .browser-meta {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
 
-    .browser-tag, .challenge-tier {
+    .browser-name {
+      font-size: 0.86rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .browser-tag,
+    .challenge-tier {
       padding: 3px 8px;
       border-radius: 999px;
       font-size: 0.62rem;
@@ -539,11 +574,22 @@
       white-space: nowrap;
     }
 
-    .browser-desc, .challenge-desc, .challenge-goal { font-size: 0.76rem; line-height: 1.45; color: var(--text-muted); }
+    .browser-desc,
+    .challenge-desc,
+    .challenge-goal {
+      font-size: 0.76rem;
+      line-height: 1.45;
+      color: var(--text-muted);
+    }
+
     .browser-desc { margin-bottom: 10px; }
     .challenge-goal { margin-top: 8px; }
 
-    .browser-actions { display: flex; gap: 8px; flex-wrap: wrap; }
+    .browser-actions {
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
 
     .btn-inline {
       padding: 7px 10px;
@@ -557,8 +603,17 @@
       transition: all 0.2s;
     }
 
-    .btn-inline:hover { color: var(--accent); border-color: var(--accent); background: var(--accent-dim); }
-    .btn-inline.active { color: var(--accent); border-color: rgba(0, 230, 210, 0.35); background: var(--accent-dim); }
+    .btn-inline:hover {
+      color: var(--accent);
+      border-color: var(--accent);
+      background: var(--accent-dim);
+    }
+
+    .btn-inline.active {
+      color: var(--accent);
+      border-color: rgba(0, 230, 210, 0.35);
+      background: var(--accent-dim);
+    }
 
     .challenge-card {
       border: 1px solid var(--border-light);
@@ -572,15 +627,75 @@
     .challenge-card.sequential { border-left: 3px solid #f1c40f; }
     .challenge-card.advanced { border-left: 3px solid #e74c3c; }
 
-    .challenge-head { display: flex; justify-content: space-between; align-items: flex-start; gap: 10px; margin-bottom: 8px; }
-    .challenge-name { font-size: 0.84rem; font-weight: 600; color: var(--text-main); }
+    .challenge-card.beginner .challenge-tier { color: #26c281; border-color: rgba(38, 194, 129, 0.25); background: rgba(38, 194, 129, 0.1); }
+    .challenge-card.intermediate .challenge-tier { color: #3498db; border-color: rgba(52, 152, 219, 0.25); background: rgba(52, 152, 219, 0.1); }
+    .challenge-card.sequential .challenge-tier { color: #f1c40f; border-color: rgba(241, 196, 15, 0.25); background: rgba(241, 196, 15, 0.1); }
+    .challenge-card.advanced .challenge-tier { color: #e74c3c; border-color: rgba(231, 76, 60, 0.25); background: rgba(231, 76, 60, 0.1); }
 
-    .challenge-status { margin-top: 8px; font-size: 0.72rem; font-weight: 600; letter-spacing: 0.3px; }
+    .challenge-head {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      gap: 10px;
+      margin-bottom: 8px;
+    }
+
+    .challenge-name {
+      font-size: 0.84rem;
+      font-weight: 600;
+      color: var(--text-main);
+    }
+
+    .challenge-hint {
+      margin-top: 8px;
+      padding-top: 8px;
+      border-top: 1px solid rgba(255, 255, 255, 0.05);
+      font-size: 0.72rem;
+      color: var(--text-dim);
+    }
+
+    .challenge-status {
+      margin-top: 8px;
+      font-size: 0.72rem;
+      font-weight: 600;
+      letter-spacing: 0.3px;
+    }
+
     .challenge-status.pending { color: var(--text-muted); }
     .challenge-status.started { color: #f1c40f; }
     .challenge-status.done { color: #26c281; }
 
-    /* WELCOME MODAL */
+    .challenge-checker {
+      margin-top: 10px;
+      border: 1px solid var(--border-light);
+      border-radius: 8px;
+      padding: 10px;
+      background: rgba(255, 255, 255, 0.02);
+    }
+
+    .challenge-checker-title {
+      font-size: 0.72rem;
+      font-weight: 700;
+      color: var(--text-main);
+      margin-bottom: 6px;
+      text-transform: uppercase;
+      letter-spacing: 0.6px;
+    }
+
+    .challenge-checker-msg {
+      font-size: 0.74rem;
+      line-height: 1.4;
+      color: var(--text-muted);
+      margin-top: 8px;
+      min-height: 16px;
+    }
+
+    .challenge-checker-msg.success { color: #26c281; }
+    .challenge-checker-msg.fail { color: #e74c3c; }
+
+    /* ────────────────────────────────────────────────
+       WELCOME MODAL
+       ──────────────────────────────────────────────── */
     #welcome-modal {
       position: fixed;
       inset: 0;
@@ -610,6 +725,14 @@
       overflow: hidden;
     }
 
+    .welcome-card::before {
+      content: '';
+      position: absolute;
+      inset: 0;
+      background: linear-gradient(180deg, rgba(255, 255, 255, 0.04), rgba(255, 255, 255, 0));
+      pointer-events: none;
+    }
+
     #welcome-close {
       position: absolute;
       top: 12px;
@@ -627,55 +750,281 @@
       z-index: 1;
       transition: all 0.2s;
     }
-    #welcome-close:hover { color: var(--text-main); border-color: var(--accent); background: var(--accent-dim); }
+    #welcome-close:hover {
+      color: var(--text-main);
+      border-color: var(--accent);
+      background: var(--accent-dim);
+    }
 
     .welcome-badge {
-      display: inline-flex; align-items: center; gap: 6px;
-      border: 1px solid rgba(0, 230, 210, 0.35); background: rgba(0, 230, 210, 0.1); color: var(--accent);
-      border-radius: 999px; padding: 5px 12px; font-size: 0.68rem; letter-spacing: 0.8px; text-transform: uppercase; font-weight: 700; margin-bottom: 14px;
+      display: inline-flex;
+      align-items: center;
+      gap: 6px;
+      border: 1px solid rgba(0, 230, 210, 0.35);
+      background: rgba(0, 230, 210, 0.1);
+      color: var(--accent);
+      border-radius: 999px;
+      padding: 5px 12px;
+      font-size: 0.68rem;
+      letter-spacing: 0.8px;
+      text-transform: uppercase;
+      font-weight: 700;
+      margin-bottom: 14px;
     }
 
-    .welcome-title { color: var(--accent); font-size: clamp(1.05rem, 2.35vw, 1.6rem); font-weight: 700; letter-spacing: 0.3px; line-height: 1.25; margin-bottom: 12px; }
-    .welcome-note { color: var(--text-muted); font-size: clamp(0.8rem, 1.6vw, 0.96rem); line-height: 1.5; max-width: 62ch; margin: 0 auto; }
-    .welcome-divider { height: 1px; width: 100%; margin: 16px 0 14px; background: linear-gradient(90deg, transparent, var(--border-light), transparent); }
+    .welcome-title {
+      color: var(--accent);
+      font-size: clamp(1.05rem, 2.35vw, 1.6rem);
+      font-weight: 700;
+      letter-spacing: 0.3px;
+      line-height: 1.25;
+      margin-bottom: 12px;
+    }
+
+    .welcome-note {
+      color: var(--text-muted);
+      font-size: clamp(0.8rem, 1.6vw, 0.96rem);
+      line-height: 1.5;
+      max-width: 62ch;
+      margin: 0 auto;
+    }
+
+    .welcome-divider {
+      height: 1px;
+      width: 100%;
+      margin: 16px 0 14px;
+      background: linear-gradient(90deg, transparent, var(--border-light), transparent);
+    }
 
     .welcome-start {
-      border: 1px solid rgba(0, 230, 210, 0.38); background: var(--accent-dim); color: var(--accent);
-      border-radius: 8px; padding: 8px 14px; font-size: 0.78rem; font-weight: 700; letter-spacing: 0.35px; text-transform: uppercase; cursor: pointer; transition: all 0.2s; margin-top: 2px;
+      border: 1px solid rgba(0, 230, 210, 0.38);
+      background: var(--accent-dim);
+      color: var(--accent);
+      border-radius: 8px;
+      padding: 8px 14px;
+      font-size: 0.78rem;
+      font-weight: 700;
+      letter-spacing: 0.35px;
+      text-transform: uppercase;
+      cursor: pointer;
+      transition: all 0.2s;
+      margin-top: 2px;
     }
-    .welcome-start:hover { background: var(--accent-hover); border-color: var(--accent); color: var(--text-main); }
+    .welcome-start:hover {
+      background: var(--accent-hover);
+      border-color: var(--accent);
+      color: var(--text-main);
+    }
 
     @media (max-width: 991.98px) {
-      body { height: auto; overflow: auto; }
-      #top-nav { height: auto; flex-direction: column; align-items: stretch; gap: 8px; padding: 10px 12px; }
-      .nav-left, .nav-right { gap: 8px; width: 100%; overflow: visible; padding-bottom: 0; }
-      .nav-left { justify-content: space-between; }
-      .divider { display: none; }
-      .nav-right { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); }
-      .nav-btn { width: 100%; justify-content: center; min-height: 40px; padding: 8px 6px; font-size: 0.68rem; white-space: nowrap; }
-      #btn-components, #btn-examples, #btn-challenges, #btn-tt, #btn-props { display: none; }
-      #workspace { flex-direction: column; overflow: visible; }
-      #left-panel, #right-panel { width: 100%; border-left: none; border-right: none; }
-      #left-panel { display: flex; flex-direction: column; border-bottom: 1px solid var(--border-color); max-height: min(34vh, 320px); }
-      #left-panel > .panel-header { flex-shrink: 0; }
-      #mobile-section-nav { order: -1; flex-shrink: 0; margin: 10px 12px 0; border: 1px solid var(--border-color); border-radius: 10px; }
-      #left-panel.mode-expanded { max-height: min(65vh, 540px); }
-      #right-panel { display: none; }
-      #btn-right-panel-show { display: none !important; }
-      #left-panel.mode-panel-active { max-height: min(65vh, 540px); }
-      #left-panel.mode-panel-active > .panel-content, #left-panel.mode-panel-active > .panel-header { display: none; }
-      #left-panel.mode-panel-active #mobile-section-nav { display: flex; }
-      #left-panel.mode-panel-active #left-mode-panel { display: flex !important; }
-      #btn-back-to-components, #btn-components-toggle { display: inline-flex; }
-      #left-panel.collapsed { max-height: 58px; }
-      #left-panel.collapsed .panel-content { display: none; }
-      #left-panel.collapsed .panel-header { border-bottom: none; }
-      #center-panel { min-height: 58vh; }
-      #undo-redo-bar, #status-main { flex-wrap: wrap; }
-      #status-bar { height: auto; min-height: 36px; padding: 8px 12px; }
-      #status-right, #status-hint { width: 100%; max-width: none; text-align: left; white-space: normal; }
-      #truth-table-view { min-width: 420px; }
-      #mobile-canvas-controls, #mobile-section-nav { display: flex; }
+      body {
+        height: auto;
+        overflow: auto;
+      }
+
+      #top-nav {
+        height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        gap: 8px;
+        padding: 10px 12px;
+      }
+
+      .nav-left,
+      .nav-right {
+        gap: 8px;
+        width: 100%;
+        overflow: visible;
+        padding-bottom: 0;
+      }
+
+      .nav-left::-webkit-scrollbar,
+      .nav-right::-webkit-scrollbar {
+        display: none;
+      }
+
+      .nav-left {
+        justify-content: space-between;
+      }
+
+      .divider {
+        display: none;
+      }
+
+      .nav-right {
+        display: grid;
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+      }
+
+      .nav-btn {
+        width: 100%;
+        justify-content: center;
+        min-height: 40px;
+        padding: 8px 6px;
+        font-size: 0.68rem;
+        white-space: nowrap;
+      }
+
+      /* Mode buttons are already available in mobile quick-nav. */
+      #btn-components,
+      #btn-examples,
+      #btn-challenges,
+      #btn-tt,
+      #btn-props {
+        display: none;
+      }
+
+      #workspace {
+        flex-direction: column;
+        overflow: visible;
+      }
+
+      #left-panel,
+      #right-panel {
+        width: 100%;
+        border-left: none;
+        border-right: none;
+      }
+
+      #left-panel {
+        display: flex;
+        flex-direction: column;
+        border-bottom: 1px solid var(--border-color);
+        max-height: min(34vh, 320px);
+      }
+
+      #left-panel > .panel-header {
+        flex-shrink: 0;
+      }
+
+      #mobile-section-nav {
+        order: -1;
+        flex-shrink: 0;
+        margin: 10px 12px 0;
+        border: 1px solid var(--border-color);
+        border-radius: 10px;
+      }
+
+      #left-panel.mode-expanded {
+        max-height: min(65vh, 540px);
+      }
+
+      /* On mobile: hide the default right panel — content moves to left panel */
+      #right-panel {
+        display: none;
+      }
+
+      #btn-right-panel-show {
+        display: none !important;
+      }
+
+      /* When a non-component mode is active, expand the left panel and swap content */
+      #left-panel.mode-panel-active {
+        max-height: min(65vh, 540px);
+      }
+
+      #left-panel.mode-panel-active > .panel-content {
+        display: none;
+      }
+
+      #left-panel.mode-panel-active > .panel-header {
+        display: none;
+      }
+
+      #left-panel.mode-panel-active #mobile-section-nav {
+        display: flex;
+      }
+
+      #left-panel.mode-panel-active #left-mode-panel {
+        display: flex !important;
+      }
+
+      #btn-back-to-components {
+        display: inline-flex;
+      }
+
+      #btn-components-toggle {
+        display: inline-flex;
+      }
+
+      #left-panel.collapsed {
+        max-height: 58px;
+      }
+
+      #left-panel.collapsed .panel-content {
+        display: none;
+      }
+
+      #left-panel.collapsed .panel-header {
+        border-bottom: none;
+      }
+
+      #center-panel {
+        min-height: 58vh;
+      }
+
+      #right-panel {
+        border-top: 1px solid var(--border-color);
+        max-height: min(38vh, 360px);
+      }
+
+      #undo-redo-bar,
+      #status-main {
+        flex-wrap: wrap;
+      }
+
+      #undo-redo-bar #zoom-indicator {
+        margin-left: 0;
+      }
+
+      #status-bar {
+        height: auto;
+        min-height: 36px;
+        padding: 8px 12px;
+      }
+
+      #status-right,
+      #status-hint {
+        width: 100%;
+        max-width: none;
+        text-align: left;
+        white-space: normal;
+      }
+
+      #truth-table-view {
+        min-width: 420px;
+      }
+
+      #mobile-canvas-controls {
+        display: flex;
+      }
+
+      #mobile-section-nav {
+        display: flex;
+        margin: 10px 12px 0;
+      }
+
+      .welcome-card {
+        padding: 24px 18px 18px;
+      }
+    }
+
+    @media (max-width: 767.98px) {
+      .panel-header,
+      .panel-content {
+        padding-left: 14px;
+        padding-right: 14px;
+      }
+
+      .browser-meta,
+      .challenge-head {
+        flex-direction: column;
+        align-items: flex-start;
+      }
+
+      .welcome-note {
+        max-width: 32ch;
+      }
     }
   </style>
 </head>
@@ -730,7 +1079,7 @@
         
         <div class="category-title">Basic</div>
         <div class="gate-tool" data-type="and" draggable="true">
-          <div class="gate-tool-left"><div class="gate-icon-box">&amp;</div><span class="gate-tool-name">AND</span></div>
+          <div class="gate-tool-left"><div class="gate-icon-box">&</div><span class="gate-tool-name">AND</span></div>
           <span class="gate-tool-ports">2→1</span>
         </div>
         <div class="gate-tool" data-type="or" draggable="true">
@@ -752,7 +1101,7 @@
           <span class="gate-tool-ports">2→1</span>
         </div>
         <div class="gate-tool" data-type="nand" draggable="true">
-          <div class="gate-tool-left"><div class="gate-icon-box" style="text-decoration: overline;">&amp;</div><span class="gate-tool-name">NAND</span></div>
+          <div class="gate-tool-left"><div class="gate-icon-box" style="text-decoration: overline;">&</div><span class="gate-tool-name">NAND</span></div>
           <span class="gate-tool-ports">2→1</span>
         </div>
         <div class="gate-tool" data-type="nor" draggable="true">
@@ -772,6 +1121,7 @@
 
       </div>
 
+      <!-- Mobile-only mode panel: shows Examples/Challenges/Properties/Truth Table inside left panel -->
       <div id="left-mode-panel" style="display:none; flex-direction:column; flex:1; min-height:0; overflow:hidden;">
         <div class="panel-header" id="left-mode-header">
           <span id="left-mode-title"><i class="ph ph-stack"></i> EXAMPLES</span>
@@ -814,7 +1164,8 @@
         <span id="right-title"><i class="ph ph-gear"></i> PROPERTIES</span>
         <button type="button" id="btn-right-panel-toggle" aria-label="Hide right panel" title="Hide panel"><i class="ph ph-caret-right"></i></button>
       </div>
-      <div class="panel-content" id="right-content"></div>
+      <div class="panel-content" id="right-content">
+        </div>
     </div>
 
   </div>
@@ -848,11 +1199,12 @@ const leftModeHeader = document.getElementById('left-mode-header');
 const leftModeTitle = document.getElementById('left-mode-title');
 const leftModeContent = document.getElementById('left-mode-content');
 const btnBackToComponents = document.getElementById('btn-back-to-components');
-
 if (btnBackToComponents) {
   btnBackToComponents.addEventListener('click', () => handleMobileSectionAction('components'));
 }
 
+// Returns the content container to write mode content into
+// (left-mode-content on mobile, right-content on desktop)
 function getModeContentEl() {
   return (isMobileLayout() && leftModeContent) ? leftModeContent : rightContent;
 }
@@ -867,13 +1219,11 @@ let challengeFeedback = '';
 const exampleSignatureCache = {};
 
 let currentMode = 'examples';
-let isPointerDown = false;
-let hasDragged = false;
-let startPointerPos = { x: 0, y: 0 };
-let mouseWorldPos = { x: 0, y: 0 };
+let activePointerId = null;
 
 const mobileLayoutQuery = window.matchMedia('(max-width: 991.98px)');
 
+// Undo / Redo stacks
 let undoStack = [], redoStack = [];
 const MAX_HISTORY = 50;
 
@@ -907,6 +1257,7 @@ function updateUndoRedoButtons() {
   if (btnRedo) btnRedo.disabled = redoStack.length === 0;
 }
 
+// Zoom and pan state
 let zoomLevel = 1;
 let panX = 0, panY = 0;
 let isPanning = false;
@@ -1039,8 +1390,12 @@ function closeWelcomeModal() {
   welcomeModal.setAttribute('aria-hidden', 'true');
 }
 
-if (welcomeClose) welcomeClose.addEventListener('click', closeWelcomeModal);
-if (welcomeStart) welcomeStart.addEventListener('click', closeWelcomeModal);
+if (welcomeClose) {
+  welcomeClose.addEventListener('click', closeWelcomeModal);
+}
+if (welcomeStart) {
+  welcomeStart.addEventListener('click', closeWelcomeModal);
+}
 if (welcomeModal) {
   welcomeModal.addEventListener('click', e => {
     if (e.target === welcomeModal) closeWelcomeModal();
@@ -1059,6 +1414,8 @@ function resize() {
   canvas.style.width = container.clientWidth + 'px';
   canvas.style.height = container.clientHeight + 'px';
 
+  // Reset any existing transform before applying the device-pixel ratio;
+  // otherwise the canvas keeps stacking scaling on top of itself.
   ctx.setTransform(1, 0, 0, 1, 0, 0);
   ctx.scale(dpr, dpr);
 
@@ -1066,6 +1423,14 @@ function resize() {
   render();
 }
 window.addEventListener('resize', resize);
+if (mobileLayoutQuery.addEventListener) {
+  mobileLayoutQuery.addEventListener('change', () => {
+    setComponentsCollapsed(false);
+    setRightPanelCollapsed(false);
+    updateInteractionHint();
+    syncMobileQuickButtons(leftPanel && leftPanel.classList.contains('mode-panel-active') ? currentMode : 'components');
+  });
+}
 
 function getPortConfig(type) {
   if (type === 'input') return { inPorts: 0, outPorts: 1, height: 50 };
@@ -1123,6 +1488,7 @@ function drawGateShape(type, x, y, w, h, value = false) {
   ctx.lineCap = 'round';
   ctx.lineJoin = 'round';
 
+  // Pin stubs for a schematic look
   inPins.forEach(pin => {
     ctx.beginPath();
     ctx.moveTo(pin.x, pin.y);
@@ -1198,26 +1564,31 @@ function drawGateShape(type, x, y, w, h, value = false) {
     return;
   }
 
+  // I/O symbols
   if (type === 'input') {
     const btnR = Math.min(13, gh * 0.48);
 
+    // Wire and stem
     ctx.beginPath();
     ctx.moveTo(left - 2, cy);
     ctx.lineTo(cx - btnR - 4, cy);
     ctx.stroke();
 
+    // Button cap (pressed when HIGH)
     ctx.fillStyle = value ? cssVar('--accent') : cssVar('--input-off');
     ctx.beginPath();
     ctx.arc(cx - 1, cy, btnR, 0, Math.PI * 2);
     ctx.fill();
     ctx.stroke();
 
+    // Subtle highlight ring
     ctx.lineWidth = 1;
     ctx.strokeStyle = value ? cssVar('--accent') : cssVar('--button-ring-off');
     ctx.beginPath();
     ctx.arc(cx - 1, cy, btnR + 2.2, 0, Math.PI * 2);
     ctx.stroke();
 
+    // Output side pin stub
     ctx.lineWidth = 1.8;
     ctx.strokeStyle = cssVar('--symbol-stroke');
     ctx.beginPath();
@@ -1234,24 +1605,32 @@ function drawGateShape(type, x, y, w, h, value = false) {
     const bulbCx = cx;
     const bulbCy = cy - 1;
 
+    // Input pin to bulb
     ctx.beginPath();
     ctx.moveTo(left - 2, cy);
     ctx.lineTo(bulbCx - bulbR - 2, cy);
     ctx.stroke();
 
+    // Bulb glass
     ctx.fillStyle = value ? 'rgba(255, 226, 120, 0.42)' : 'rgba(255, 255, 255, 0.03)';
     ctx.beginPath();
     ctx.arc(bulbCx, bulbCy, bulbR, 0, Math.PI * 2);
     ctx.fill();
     ctx.stroke();
 
+    // Strong halo when ON
     if (value) {
       ctx.fillStyle = 'rgba(255, 214, 80, 0.20)';
-      ctx.beginPath(); ctx.arc(bulbCx, bulbCy, bulbR + 7, 0, Math.PI * 2); ctx.fill();
+      ctx.beginPath();
+      ctx.arc(bulbCx, bulbCy, bulbR + 7, 0, Math.PI * 2);
+      ctx.fill();
       ctx.fillStyle = 'rgba(255, 240, 170, 0.22)';
-      ctx.beginPath(); ctx.arc(bulbCx, bulbCy, bulbR + 3, 0, Math.PI * 2); ctx.fill();
+      ctx.beginPath();
+      ctx.arc(bulbCx, bulbCy, bulbR + 3, 0, Math.PI * 2);
+      ctx.fill();
     }
 
+    // Filament
     ctx.lineWidth = 1.2;
     ctx.strokeStyle = value ? '#ffe07a' : cssVar('--bulb-filament-off');
     ctx.beginPath();
@@ -1261,6 +1640,7 @@ function drawGateShape(type, x, y, w, h, value = false) {
     ctx.lineTo(bulbCx + 4, bulbCy + 2);
     ctx.stroke();
 
+    // Bulb base
     ctx.lineWidth = 1.8;
     ctx.strokeStyle = cssVar('--symbol-stroke');
     ctx.beginPath();
@@ -1268,6 +1648,7 @@ function drawGateShape(type, x, y, w, h, value = false) {
     ctx.lineTo(bulbCx + 4, bulbCy + bulbR + 1);
     ctx.stroke();
 
+    // Glow rays when ON
     if (value) {
       ctx.strokeStyle = 'rgba(255, 214, 80, 0.85)';
       ctx.lineWidth = 1;
@@ -1286,6 +1667,7 @@ function drawGateShape(type, x, y, w, h, value = false) {
       });
     }
 
+    // Tiny output stub for consistency
     ctx.beginPath();
     ctx.moveTo(bulbCx + bulbR + 2, cy);
     ctx.lineTo(right + 2, cy);
@@ -1328,15 +1710,22 @@ class Gate {
   }
 
   draw() {
+    const isIO = this.type === 'input' || this.type === 'output';
+
+    // Selection outline
     if (selectedComp === this) {
       ctx.strokeStyle = cssVar('--selection-stroke'); ctx.lineWidth = 1;
       ctx.strokeRect(this.x - 4, this.y - 4, this.w + 8, this.h + 8);
 
+      // Inline delete control for selected gate.
       const del = this.getDeleteBadgePos();
       ctx.fillStyle = '#e74c3c';
       ctx.strokeStyle = '#ffd7d2';
       ctx.lineWidth = 1;
-      ctx.beginPath(); ctx.arc(del.x, del.y, del.r, 0, Math.PI * 2); ctx.fill(); ctx.stroke();
+      ctx.beginPath();
+      ctx.arc(del.x, del.y, del.r, 0, Math.PI * 2);
+      ctx.fill();
+      ctx.stroke();
 
       ctx.strokeStyle = '#ffffff';
       ctx.lineWidth = 1.8;
@@ -1348,15 +1737,17 @@ class Gate {
       ctx.stroke();
     }
 
+    // Label above symbol
     ctx.fillStyle = cssVar('--symbol-label'); ctx.font = "10px Inter"; ctx.textAlign = "center";
     ctx.fillText(this.label, this.x + this.w/2, this.y + 12);
 
     drawGateShape(this.type, this.x, this.y, this.w, this.h, this.value);
 
+    // Ports
     ctx.lineWidth = 1;
     for(let i=0; i<this.inPorts; i++) {
       let p = this.getInPos(i);
-      ctx.fillStyle = (connectingFrom && connectingFrom.component === this && connectingFrom.portIndex === i) ? cssVar('--port-connect-highlight') : (this.inputs[i] ? cssVar('--accent') : cssVar('--port-off'));
+      ctx.fillStyle = (connectingFrom && connectingFrom.c === this && connectingFrom.p === i) ? cssVar('--port-connect-highlight') : (this.inputs[i] ? cssVar('--accent') : cssVar('--port-off'));
       ctx.strokeStyle = cssVar('--port-ring');
       ctx.beginPath(); ctx.arc(p.x, p.y, 4, 0, Math.PI*2); ctx.fill(); ctx.stroke();
     }
@@ -1384,15 +1775,42 @@ class Gate {
   }
 }
 
+function getGateSymbol(t) {
+  const m = { and:'&', nand:'&', or:'≥1', nor:'≥1', not:'1', xor:'=1', xnor:'=0', input:'▶', output:'◀' };
+  return m[t] || '';
+}
+
 function validateWire(wire) {
+  // Check if target component exists
   if (!wire.to || !wire.to.c || wire.to.c.type === 'input') return false;
+  // Check if port number is valid for the target
   if (wire.to.p >= wire.to.c.inPorts) return false;
+  // Check if source exists
   if (!wire.from || !wire.from.c || !wire.from.c.outPorts) return false;
   return true;
 }
 
 function getErrorWires() {
   return wires.filter(w => !validateWire(w));
+}
+
+function isPointNearWire(mx, my, wire, threshold = 8) {
+  let p1 = wire.from.c.getOutPos();
+  let p2 = wire.to.c.getInPos(wire.to.p);
+  
+  // Sample points along the Bezier curve and check distance
+  let cp = Math.max(Math.abs(p2.x - p1.x)/2, 30);
+  for (let t = 0; t <= 1; t += 0.05) {
+    // Bezier formula: B(t) = (1-t)³P0 + 3(1-t)²t P1 + 3(1-t)t²P2 + t³P3
+    let mt = 1 - t;
+    let x = mt*mt*mt*p1.x + 3*mt*mt*t*(p1.x+cp) + 3*mt*t*t*(p2.x-cp) + t*t*t*p2.x;
+    let y = mt*mt*mt*p1.y + 3*mt*mt*t*p1.y + 3*mt*t*t*p2.y + t*t*t*p2.y;
+    
+    if (Math.hypot(mx - x, my - y) < threshold) {
+      return true;
+    }
+  }
+  return false;
 }
 
 function serializeCircuit() {
@@ -1418,6 +1836,7 @@ function deserializeCircuit(encoded) {
     const data = JSON.parse(atob(encoded));
     clearWorkspace();
     
+    // Recreate components
     data.components.forEach(comp => {
       const gate = new Gate(comp.type, comp.x, comp.y);
       gate.label = comp.label;
@@ -1425,6 +1844,7 @@ function deserializeCircuit(encoded) {
       components.push(gate);
     });
     
+    // Recreate wires
     data.wires.forEach(w => {
       if (w.from >= 0 && w.to >= 0 && w.from < components.length && w.to < components.length) {
         wires.push({
@@ -1457,6 +1877,29 @@ function loadFromURL() {
       setMode('props');
     }
   }
+}
+
+function calculateScore() {
+  const nonIOGates = components.filter(c => c.type !== 'input' && c.type !== 'output').length;
+  const inputs = components.filter(c => c.type === 'input').length;
+  const outputs = components.filter(c => c.type === 'output').length;
+  const errorCount = getErrorWires().length;
+  
+  // Base efficiency: fewer gates is better, fewer wires is better
+  const gateScore = Math.max(0, 100 - nonIOGates * 5);
+  const wireScore = Math.max(0, 100 - wires.length * 3);
+  const errorPenalty = errorCount * 15;
+  
+  const overallScore = Math.max(0, (gateScore + wireScore) / 2 - errorPenalty);
+  
+  return {
+    score: Math.round(overallScore),
+    gates: nonIOGates,
+    wires: wires.length,
+    errors: errorCount,
+    inputs: inputs,
+    outputs: outputs
+  };
 }
 
 function clearWorkspace() {
@@ -1540,7 +1983,7 @@ const EXAMPLES = {
   xnor: {
     title: 'XNOR Gate',
     category: 'Fundamentals',
-    description: 'Equality detector built from the XNOR component. Output is HIGH when inputs match.',
+    description: 'Equality detector built from the new XNOR component. Output is HIGH when inputs match.',
     build: () => buildBinaryGateDemo('xnor')
   },
   nandUniversal: {
@@ -1560,6 +2003,27 @@ const EXAMPLES = {
       connect(y, out, 0);
     }
   },
+  deMorgan: {
+    title: 'De Morgan Visualizer',
+    category: 'Equivalences & Laws',
+    description: 'Places both sides of NOT(A OR B) = (NOT A) AND (NOT B) side by side for live comparison.',
+    build: () => {
+      const a = createGate('input', 40, 110, 'A');
+      const b = createGate('input', 40, 240, 'B');
+      const orGate = createGate('or', 200, 150, 'OR');
+      const leftNot = createGate('not', 360, 165, 'NOT');
+      const lhs = createGate('output', 520, 165, 'LHS');
+      const notA = createGate('not', 200, 300, 'NOT');
+      const notB = createGate('not', 200, 390, 'NOT');
+      const andGate = createGate('and', 360, 330, 'AND');
+      const rhs = createGate('output', 520, 345, 'RHS');
+      connect(a, orGate, 0); connect(b, orGate, 1);
+      connect(orGate, leftNot, 0); connect(leftNot, lhs, 0);
+      connect(a, notA, 0); connect(b, notB, 0);
+      connect(notA, andGate, 0); connect(notB, andGate, 1);
+      connect(andGate, rhs, 0);
+    }
+  },
   halfAdder: {
     title: 'Half Adder',
     category: 'Arithmetic',
@@ -1575,30 +2039,307 @@ const EXAMPLES = {
       connect(a, andGate, 0); connect(b, andGate, 1);
       connect(xorGate, sum, 0); connect(andGate, carry, 0);
     }
+  },
+  fullAdder: {
+    title: 'Full Adder',
+    category: 'Arithmetic',
+    description: 'Combines A, B, and Cin into SUM and Carry-out using XOR, AND, and OR gates.',
+    build: () => {
+      const a = createGate('input', 40, 80, 'A');
+      const b = createGate('input', 40, 180, 'B');
+      const cin = createGate('input', 40, 280, 'Cin');
+      const xor1 = createGate('xor', 200, 110, 'X1');
+      const xor2 = createGate('xor', 380, 110, 'SUM');
+      const and1 = createGate('and', 200, 260, 'A.B');
+      const and2 = createGate('and', 380, 260, 'Cin.X1');
+      const orGate = createGate('or', 560, 260, 'Cout');
+      const sum = createGate('output', 570, 125, 'SUM');
+      const cout = createGate('output', 730, 275, 'Cout');
+      connect(a, xor1, 0); connect(b, xor1, 1);
+      connect(xor1, xor2, 0); connect(cin, xor2, 1);
+      connect(a, and1, 0); connect(b, and1, 1);
+      connect(cin, and2, 0); connect(xor1, and2, 1);
+      connect(and1, orGate, 0); connect(and2, orGate, 1);
+      connect(xor2, sum, 0); connect(orGate, cout, 0);
+    }
+  },
+  halfSubtractor: {
+    title: 'Half Subtractor',
+    category: 'Arithmetic',
+    description: 'Shows difference as A XOR B and borrow as (NOT A) AND B.',
+    build: () => {
+      const a = createGate('input', 50, 110, 'A');
+      const b = createGate('input', 50, 250, 'B');
+      const diffGate = createGate('xor', 240, 110, 'DIFF');
+      const notA = createGate('not', 220, 300, 'NOT');
+      const borrowGate = createGate('and', 390, 260, 'BORROW');
+      const diff = createGate('output', 460, 125, 'D');
+      const borrow = createGate('output', 560, 275, 'B');
+      connect(a, diffGate, 0); connect(b, diffGate, 1);
+      connect(a, notA, 0);
+      connect(notA, borrowGate, 0); connect(b, borrowGate, 1);
+      connect(diffGate, diff, 0); connect(borrowGate, borrow, 0);
+    }
+  },
+  fullSubtractor: {
+    title: 'Full Subtractor',
+    category: 'Arithmetic',
+    description: 'Computes difference and borrow-out for A - B - Bin using reusable intermediate signals.',
+    build: () => {
+      const a = createGate('input', 30, 70, 'A');
+      const b = createGate('input', 30, 170, 'B');
+      const bin = createGate('input', 30, 270, 'Bin');
+      const xor1 = createGate('xor', 190, 100, 'X1');
+      const xor2 = createGate('xor', 360, 100, 'DIFF');
+      const notA = createGate('not', 180, 290, 'NOT');
+      const and1 = createGate('and', 350, 250, 'T1');
+      const notX1 = createGate('not', 350, 340, 'NOT');
+      const and2 = createGate('and', 520, 310, 'T2');
+      const orGate = createGate('or', 680, 280, 'Bout');
+      const diff = createGate('output', 540, 115, 'D');
+      const bout = createGate('output', 830, 295, 'Bout');
+      connect(a, xor1, 0); connect(b, xor1, 1);
+      connect(xor1, xor2, 0); connect(bin, xor2, 1);
+      connect(a, notA, 0);
+      connect(notA, and1, 0); connect(b, and1, 1);
+      connect(xor1, notX1, 0);
+      connect(bin, and2, 0); connect(notX1, and2, 1);
+      connect(and1, orGate, 0); connect(and2, orGate, 1);
+      connect(xor2, diff, 0); connect(orGate, bout, 0);
+    }
+  },
+  mux2: {
+    title: '2-to-1 Multiplexer',
+    category: 'Routing & Selection',
+    description: 'Select line chooses whether input A or input B reaches the output.',
+    build: () => {
+      const a = createGate('input', 60, 100, 'A');
+      const b = createGate('input', 60, 220, 'B');
+      const sel = createGate('input', 60, 340, 'SEL');
+      const notSel = createGate('not', 200, 340, 'NOT');
+      const and1 = createGate('and', 340, 110, 'A.path');
+      const and2 = createGate('and', 340, 250, 'B.path');
+      const orGate = createGate('or', 520, 180, 'MUX');
+      const y = createGate('output', 700, 195, 'Y');
+      connect(a, and1, 0); connect(notSel, and1, 1);
+      connect(b, and2, 0); connect(sel, and2, 1);
+      connect(sel, notSel, 0);
+      connect(and1, orGate, 0); connect(and2, orGate, 1);
+      connect(orGate, y, 0);
+    }
+  },
+  mux4: {
+    title: '4-to-1 Multiplexer',
+    category: 'Routing & Selection',
+    description: 'Implements four input paths controlled by S1 and S0, then combines them into one output.',
+    build: () => {
+      const i0 = createGate('input', 30, 40, 'I0');
+      const i1 = createGate('input', 30, 130, 'I1');
+      const i2 = createGate('input', 30, 220, 'I2');
+      const i3 = createGate('input', 30, 310, 'I3');
+      const s1 = createGate('input', 30, 410, 'S1');
+      const s0 = createGate('input', 30, 500, 'S0');
+      const notS1 = createGate('not', 170, 410, 'NOT');
+      const notS0 = createGate('not', 170, 500, 'NOT');
+      const t0 = createGate('and', 320, 35, 'T0');
+      const p0 = createGate('and', 490, 35, 'P0');
+      const t1 = createGate('and', 320, 125, 'T1');
+      const p1 = createGate('and', 490, 125, 'P1');
+      const t2 = createGate('and', 320, 215, 'T2');
+      const p2 = createGate('and', 490, 215, 'P2');
+      const t3 = createGate('and', 320, 305, 'T3');
+      const p3 = createGate('and', 490, 305, 'P3');
+      const or1 = createGate('or', 670, 90, 'O1');
+      const or2 = createGate('or', 670, 270, 'O2');
+      const finalOr = createGate('or', 850, 180, 'MUX');
+      const y = createGate('output', 1020, 195, 'Y');
+      connect(s1, notS1, 0); connect(s0, notS0, 0);
+      connect(i0, t0, 0); connect(notS1, t0, 1); connect(t0, p0, 0); connect(notS0, p0, 1);
+      connect(i1, t1, 0); connect(notS1, t1, 1); connect(t1, p1, 0); connect(s0, p1, 1);
+      connect(i2, t2, 0); connect(s1, t2, 1); connect(t2, p2, 0); connect(notS0, p2, 1);
+      connect(i3, t3, 0); connect(s1, t3, 1); connect(t3, p3, 0); connect(s0, p3, 1);
+      connect(p0, or1, 0); connect(p1, or1, 1);
+      connect(p2, or2, 0); connect(p3, or2, 1);
+      connect(or1, finalOr, 0); connect(or2, finalOr, 1);
+      connect(finalOr, y, 0);
+    }
+  },
+  demux: {
+    title: '1-to-2 Demultiplexer',
+    category: 'Routing & Selection',
+    description: 'Routes a single data input to either Y0 or Y1 depending on the select line.',
+    build: () => {
+      const d = createGate('input', 50, 160, 'D');
+      const sel = createGate('input', 50, 310, 'SEL');
+      const notSel = createGate('not', 220, 310, 'NOT');
+      const y0Gate = createGate('and', 380, 120, 'Y0');
+      const y1Gate = createGate('and', 380, 260, 'Y1');
+      const y0 = createGate('output', 560, 135, 'Y0');
+      const y1 = createGate('output', 560, 275, 'Y1');
+      connect(sel, notSel, 0);
+      connect(d, y0Gate, 0); connect(notSel, y0Gate, 1);
+      connect(d, y1Gate, 0); connect(sel, y1Gate, 1);
+      connect(y0Gate, y0, 0); connect(y1Gate, y1, 0);
+    }
+  },
+  decoder24: {
+    title: '2-to-4 Decoder',
+    category: 'Routing & Selection',
+    description: 'Decodes A and B into four mutually exclusive outputs Y0 through Y3.',
+    build: () => {
+      const a = createGate('input', 40, 120, 'A');
+      const b = createGate('input', 40, 260, 'B');
+      const notA = createGate('not', 190, 120, 'NOT');
+      const notB = createGate('not', 190, 260, 'NOT');
+      const y0Gate = createGate('and', 380, 50, 'Y0');
+      const y1Gate = createGate('and', 380, 150, 'Y1');
+      const y2Gate = createGate('and', 380, 250, 'Y2');
+      const y3Gate = createGate('and', 380, 350, 'Y3');
+      const y0 = createGate('output', 570, 65, 'Y0');
+      const y1 = createGate('output', 570, 165, 'Y1');
+      const y2 = createGate('output', 570, 265, 'Y2');
+      const y3 = createGate('output', 570, 365, 'Y3');
+      connect(a, notA, 0); connect(b, notB, 0);
+      connect(notA, y0Gate, 0); connect(notB, y0Gate, 1);
+      connect(notA, y1Gate, 0); connect(b, y1Gate, 1);
+      connect(a, y2Gate, 0); connect(notB, y2Gate, 1);
+      connect(a, y3Gate, 0); connect(b, y3Gate, 1);
+      connect(y0Gate, y0, 0); connect(y1Gate, y1, 0); connect(y2Gate, y2, 0); connect(y3Gate, y3, 0);
+    }
+  },
+  comparator1: {
+    title: '1-bit Comparator',
+    category: 'Compare',
+    description: 'Generates A=B, A>B, and A<B outputs for two single-bit inputs.',
+    build: () => {
+      const a = createGate('input', 40, 120, 'A');
+      const b = createGate('input', 40, 250, 'B');
+      const eqGate = createGate('xnor', 240, 70, 'EQ');
+      const notB = createGate('not', 220, 220, 'NOT');
+      const gtGate = createGate('and', 400, 170, 'GT');
+      const notA = createGate('not', 220, 340, 'NOT');
+      const ltGate = createGate('and', 400, 300, 'LT');
+      const eq = createGate('output', 430, 85, 'EQ');
+      const gt = createGate('output', 580, 185, 'GT');
+      const lt = createGate('output', 580, 315, 'LT');
+      connect(a, eqGate, 0); connect(b, eqGate, 1);
+      connect(b, notB, 0); connect(a, gtGate, 0); connect(notB, gtGate, 1);
+      connect(a, notA, 0); connect(notA, ltGate, 0); connect(b, ltGate, 1);
+      connect(eqGate, eq, 0); connect(gtGate, gt, 0); connect(ltGate, lt, 0);
+    }
   }
 };
 
-const EXAMPLE_GROUPS = ['Fundamentals', 'Equivalences & Laws', 'Arithmetic'];
+const EXAMPLE_GROUPS = ['Fundamentals', 'Equivalences & Laws', 'Arithmetic', 'Routing & Selection', 'Compare'];
+
+const UPCOMING_EXAMPLES = [
+  'SR Flip-Flop',
+  'JK Flip-Flop',
+  'D Flip-Flop',
+  'T Flip-Flop',
+  '2-bit / 4-bit Binary Counter',
+  'Ring Counter',
+  'Shift Register (SISO, SIPO)'
+];
 
 const CHALLENGES = [
   {
     tier: 'beginner',
     title: 'Rebuild XNOR from Scratch',
-    description: 'Using only XOR and NOT, recreate an XNOR output.',
+    description: 'Using only XOR and NOT, recreate an XNOR output and confirm it matches the built-in XNOR example.',
     goal: 'Goal: produce HIGH only for 00 and 11.',
+    hint: 'Hint: invert the XOR output.',
     exampleKey: 'xnor'
   },
   {
     tier: 'beginner',
     title: 'Universal NAND Drill',
-    description: 'Recreate an OR gate using only NAND blocks.',
+    description: 'Recreate an OR gate using only NAND blocks. Compare your result with the provided equivalence example.',
     goal: 'Goal: verify the truth table matches OR for all four rows.',
+    hint: 'Hint: first build NOT A and NOT B with self-fed NANDs.',
     exampleKey: 'nandUniversal'
+  },
+  {
+    tier: 'beginner',
+    title: 'Half Adder Without Labels',
+    description: 'Build the half adder manually, then rename each output yourself based on observed truth-table behavior.',
+    goal: 'Goal: identify which output is SUM and which is CARRY.',
+    hint: 'Hint: one output is active only for input 11.',
+    exampleKey: 'halfAdder'
+  },
+  {
+    tier: 'intermediate',
+    title: '4-to-1 MUX Compression',
+    description: 'Construct a 4-to-1 multiplexer and then try reducing its layout into a cleaner arrangement on the canvas.',
+    goal: 'Goal: keep functionality identical while improving readability.',
+    hint: 'Hint: split the circuit into four paths before combining them.',
+    exampleKey: 'mux4'
+  },
+  {
+    tier: 'intermediate',
+    title: 'Borrow Logic Check',
+    description: 'Implement a full subtractor and verify the borrow-out behavior row by row using the truth table panel.',
+    goal: 'Goal: confirm the circuit borrows whenever A is too small after Bin is considered.',
+    hint: 'Hint: break borrow into two partial conditions, then OR them.',
+    exampleKey: 'fullSubtractor'
+  },
+  {
+    tier: 'intermediate',
+    title: '2-to-4 Decoder Race',
+    description: 'Build the decoder from a blank canvas and test whether exactly one output is active for every input combination.',
+    goal: 'Goal: outputs must be mutually exclusive.',
+    hint: 'Hint: you need both complemented and uncomplemented input lines.',
+    exampleKey: 'decoder24'
+  },
+  {
+    tier: 'sequential',
+    title: 'SR Latch Planning Exercise',
+    description: 'Sketch how cross-coupled NOR or NAND gates would be arranged once stateful examples are added to the simulator.',
+    goal: 'Goal: identify where feedback loops must be placed.',
+    hint: 'Hint: this build lacks sequential-state components, so treat this as a design exercise.'
+  },
+  {
+    tier: 'sequential',
+    title: 'Shift Register Roadmap',
+    description: 'Draft the signal flow for SISO and SIPO shift registers, focusing on clocked storage stages and data propagation.',
+    goal: 'Goal: decide how many flip-flops are needed and how outputs should be exposed.',
+    hint: 'Hint: think in repeated stages rather than one large formula.'
+  },
+  {
+    tier: 'sequential',
+    title: 'Counter State Table',
+    description: 'Design the expected state sequence for a 2-bit or 4-bit binary counter before implementing it in a future sequential update.',
+    goal: 'Goal: map present state to next state clearly.',
+    hint: 'Hint: start from 00 and increment one state at a time.'
+  },
+  {
+    tier: 'advanced',
+    title: 'Ripple-Carry Expansion',
+    description: 'Chain multiple full adders together mentally or on paper to plan a 4-bit adder architecture.',
+    goal: 'Goal: determine how carry signals move across stages.',
+    hint: 'Hint: Cout of one stage becomes Cin of the next.',
+    exampleKey: 'fullAdder'
+  },
+  {
+    tier: 'advanced',
+    title: 'Comparator Upgrade',
+    description: 'Extend the 1-bit comparator idea into a 2-bit comparator with EQ, GT, and LT outputs.',
+    goal: 'Goal: avoid contradictory outputs while combining bit significance correctly.',
+    hint: 'Hint: the most significant bit decides first unless it is equal.',
+    exampleKey: 'comparator1'
+  },
+  {
+    tier: 'advanced',
+    title: 'Minimal-Gate De Morgan Proof',
+    description: 'Rebuild both sides of De Morgan’s law with the fewest gates you can manage while keeping the outputs equivalent.',
+    goal: 'Goal: reduce clutter without changing the truth table.',
+    hint: 'Hint: compare shared inverted signals before duplicating work.',
+    exampleKey: 'deMorgan'
   }
 ];
 
 function escapeHtml(text) {
-  return String(text)
+  return text
     .replaceAll('&', '&amp;')
     .replaceAll('<', '&lt;')
     .replaceAll('>', '&gt;')
@@ -1607,13 +2348,14 @@ function escapeHtml(text) {
 
 function syncModeButtons() {
   Object.entries(navButtons).forEach(([mode, button]) => {
-    if (button) button.classList.toggle('active', mode === currentMode);
+    button.classList.toggle('active', mode === currentMode);
   });
 }
 
 function setMode(mode) {
   currentMode = mode;
   if (rightTitle) rightTitle.innerHTML = MODE_HEADERS[mode];
+  // On mobile, sync the left-panel mode header title (only if mode panel is already active)
   if (isMobileLayout() && leftModeTitle && leftPanel.classList.contains('mode-panel-active')) {
     leftModeTitle.innerHTML = MODE_HEADERS[mode];
   }
@@ -1624,23 +2366,8 @@ function setMode(mode) {
   updateUI();
 }
 
-function loadExample(key) {
-  const example = EXAMPLES[key];
-  if (!example) return;
-  pushUndo();
-  clearWorkspace();
-  currentExampleKey = key;
-  example.build();
-  simulate();
-  if (isMobileLayout()) {
-    handleMobileSectionAction('components');
-  } else {
-    updateUI();
-  }
-}
-
 function renderExampleBrowser() {
-  let html = '<div class="panel-note">Load prebuilt logic circuits to inspect wiring, toggle inputs, and test behaviors.</div>';
+  let html = '<div class="panel-note">Load prebuilt logic circuits so students can inspect wiring, toggle inputs, and compare behaviors against the truth table.</div>';
   EXAMPLE_GROUPS.forEach(group => {
     const items = Object.entries(EXAMPLES).filter(([, example]) => example.category === group);
     if (!items.length) return;
@@ -1661,31 +2388,184 @@ function renderExampleBrowser() {
     });
     html += '</div></div>';
   });
+  html += '<div class="browser-section"><div class="browser-title">Sequential Circuits Planned</div><div class="browser-list">';
+  UPCOMING_EXAMPLES.forEach(name => {
+    html += `
+      <div class="browser-card disabled">
+        <div class="browser-meta">
+          <div class="browser-name">${escapeHtml(name)}</div>
+          <div class="browser-tag">coming soon</div>
+        </div>
+        <div class="browser-desc">These examples need memory or clocked behavior, which this version of the simulator does not model yet.</div>
+      </div>`;
+  });
+  html += '</div></div>';
   getModeContentEl().innerHTML = html;
 }
 
 function formatTierLabel(tier) {
-  return tier.charAt(0).toUpperCase() + tier.slice(1);
+  if (tier === 'beginner') return 'Beginner';
+  if (tier === 'intermediate') return 'Intermediate';
+  if (tier === 'sequential') return 'Sequential';
+  return 'Advanced';
+}
+
+function getChallengeStatusText(index) {
+  const state = challengeProgress[index] || 'pending';
+  if (state === 'done') return { label: 'Completed', css: 'done' };
+  if (state === 'started') return { label: 'In Progress', css: 'started' };
+  return { label: 'Not Started', css: 'pending' };
+}
+
+function getTruthTableSignature() {
+  const ins = components.filter(c => c.type === 'input');
+  const outs = components.filter(c => c.type === 'output');
+
+  if (!ins.length || !outs.length) return null;
+  if (ins.length > 8) return null;
+
+  const original = ins.map(i => i.value);
+  const rowCount = 1 << ins.length;
+  const columns = outs.map(() => '');
+
+  for (let r = 0; r < rowCount; r++) {
+    ins.forEach((input, idx) => {
+      const bit = (r >> (ins.length - 1 - idx)) & 1;
+      input.value = !!bit;
+    });
+    for (let k = 0; k < 6; k++) {
+      wires.forEach(w => w.to.c.inputs[w.to.p] = w.from.c.value);
+      components.forEach(c => { if (c.type !== 'input') c.eval(); });
+    }
+    outs.forEach((out, idx) => {
+      columns[idx] += out.value ? '1' : '0';
+    });
+  }
+
+  ins.forEach((input, idx) => { input.value = original[idx]; });
+  for (let k = 0; k < 6; k++) {
+    wires.forEach(w => w.to.c.inputs[w.to.p] = w.from.c.value);
+    components.forEach(c => c.eval());
+  }
+
+  return JSON.stringify({
+    inputs: ins.length,
+    outputs: outs.length,
+    columns: columns.sort()
+  });
+}
+
+function getExpectedChallengeSignature(exampleKey) {
+  if (exampleSignatureCache[exampleKey]) return exampleSignatureCache[exampleKey];
+
+  const snapshot = {
+    encoded: serializeCircuit(),
+    nextId,
+    currentExampleKey,
+    activeChallengeIndex,
+    panX,
+    panY,
+    zoomLevel,
+    mode: currentMode
+  };
+
+  clearWorkspace();
+  EXAMPLES[exampleKey].build();
+  const signature = getTruthTableSignature();
+
+  deserializeCircuit(snapshot.encoded);
+  nextId = snapshot.nextId;
+  currentExampleKey = snapshot.currentExampleKey;
+  activeChallengeIndex = snapshot.activeChallengeIndex;
+  panX = snapshot.panX;
+  panY = snapshot.panY;
+  zoomLevel = snapshot.zoomLevel;
+  setMode(snapshot.mode);
+
+  exampleSignatureCache[exampleKey] = signature;
+  return signature;
 }
 
 function startChallenge(index) {
   activeChallengeIndex = index;
-  challengeProgress[index] = 'started';
+  challengeProgress[index] = challengeProgress[index] === 'done' ? 'done' : 'started';
+  challengeFeedback = 'Challenge started. Build your circuit on the canvas, then click Check.';
   clearWorkspace();
   currentExampleKey = null;
   setMode('challenges');
   simulate();
 }
 
+function checkChallenge(index) {
+  const challenge = CHALLENGES[index];
+  if (!challenge) return;
+
+  activeChallengeIndex = index;
+
+  if (!challenge.exampleKey) {
+    challengeFeedback = 'This is a design-only challenge. Auto-check is unavailable for sequential planning tasks.';
+    challengeProgress[index] = challengeProgress[index] === 'done' ? 'done' : 'started';
+    updateUI();
+    return;
+  }
+
+  const errors = getErrorWires().length;
+  if (errors > 0) {
+    challengeFeedback = `Fix wiring issues first: ${errors} invalid connection(s) found.`;
+    challengeProgress[index] = 'started';
+    updateUI();
+    return;
+  }
+
+  const actual = getTruthTableSignature();
+  if (!actual) {
+    challengeFeedback = 'Add at least 1 input and 1 output before checking your solution.';
+    challengeProgress[index] = 'started';
+    updateUI();
+    return;
+  }
+
+  const expected = getExpectedChallengeSignature(challenge.exampleKey);
+  if (actual === expected) {
+    challengeFeedback = 'Correct! Your circuit matches the expected truth-table behavior.';
+    challengeProgress[index] = 'done';
+  } else {
+    challengeFeedback = 'Not correct yet. Compare your outputs across all input combinations and try again.';
+    challengeProgress[index] = 'started';
+  }
+  updateUI();
+}
+
+
+function loadRelatedChallengeExample(index) {
+  const challenge = CHALLENGES[index];
+  if (!challenge) return;
+
+  activeChallengeIndex = index;
+
+  if (challenge.exampleKey) {
+    loadExample(challenge.exampleKey);
+    return;
+  }
+
+  challengeFeedback = 'Related sequential examples are coming soon in a future update.';
+  challengeProgress[index] = challengeProgress[index] === 'done' ? 'done' : 'started';
+  setMode('challenges');
+}
+window.startChallenge = startChallenge;
+window.checkChallenge = checkChallenge;
+
+window.loadRelatedChallengeExample = loadRelatedChallengeExample;
 function renderChallengeBrowser() {
-  let html = '<div class="panel-note">Challenge prompts are grouped by difficulty.</div>';
-  ['beginner', 'intermediate', 'advanced'].forEach(tier => {
-    const items = CHALLENGES.filter(c => c.tier === tier);
-    if (!items.length) return;
+  let html = '<div class="panel-note">Challenge prompts are grouped by difficulty so students can choose guided builds after studying an example. Sequential items are included as planning exercises for a later clocked version.</div>';
+  const orderedTiers = ['beginner', 'intermediate', 'sequential', 'advanced'];
+  orderedTiers.forEach(tier => {
+    const items = CHALLENGES.filter(challenge => challenge.tier === tier);
     html += `<div class="browser-section"><div class="browser-title">${formatTierLabel(tier)} Challenges</div><div class="browser-list">`;
     items.forEach(challenge => {
-      const idx = CHALLENGES.indexOf(challenge);
-      const isActive = activeChallengeIndex === idx;
+      const challengeIndex = CHALLENGES.indexOf(challenge);
+      const status = getChallengeStatusText(challengeIndex);
+      const isActive = activeChallengeIndex === challengeIndex;
       html += `
         <div class="challenge-card ${challenge.tier}">
           <div class="challenge-head">
@@ -1694,10 +2574,14 @@ function renderChallengeBrowser() {
           </div>
           <div class="challenge-desc">${escapeHtml(challenge.description)}</div>
           <div class="challenge-goal">${escapeHtml(challenge.goal)}</div>
+          <div class="challenge-status ${status.css}">Status: ${status.label}</div>
           <div class="browser-actions" style="margin-top: 10px;">
-            <button class="btn-inline" onclick="startChallenge(${idx})">${isActive ? 'Restart' : 'Start'}</button>
-            ${challenge.exampleKey ? `<button class="btn-inline" onclick="loadExample('${challenge.exampleKey}')">Load Template</button>` : ''}
+            <button class="btn-inline" onclick="startChallenge(${challengeIndex})">${isActive ? 'Restart Challenge' : 'Start Challenge'}</button>
+            <button class="btn-inline" onclick="checkChallenge(${challengeIndex})">Check Solution</button>
+            <button class="btn-inline" onclick="loadRelatedChallengeExample(${challengeIndex})">Load Related Example</button>
           </div>
+          ${isActive ? `<div class="challenge-checker"><div class="challenge-checker-title">Challenge Checker</div><div class="challenge-checker-msg ${challengeProgress[challengeIndex] === 'done' ? 'success' : (challengeFeedback ? 'fail' : '')}">${escapeHtml(challengeFeedback || 'Press Check Solution to validate your build.')}</div></div>` : ''}
+          <div class="challenge-hint">${escapeHtml(challenge.hint)}</div>
         </div>`;
     });
     html += '</div></div>';
@@ -1705,548 +2589,470 @@ function renderChallengeBrowser() {
   getModeContentEl().innerHTML = html;
 }
 
-function renderPropertiesPanel() {
-  const el = getModeContentEl();
-  if (!selectedComp) {
-    el.innerHTML = `
-      <div class="empty-state">
-        <p>No component selected.</p>
-        <p>Click on any component on the canvas to inspect and edit its properties.</p>
-      </div>`;
-    return;
-  }
-
-  let html = `
-    <div class="prop-group">
-      <div class="prop-label">Type</div>
-      <div class="prop-value">${escapeHtml(selectedComp.type.toUpperCase())}</div>
-    </div>
-    <div class="prop-group">
-      <div class="prop-label">Label</div>
-      <input type="text" class="prop-input" id="prop-label-input" value="${escapeHtml(selectedComp.label)}">
-    </div>
-    <div class="prop-group">
-      <div class="prop-label">State</div>
-      <div class="prop-value" style="color: ${selectedComp.value ? 'var(--accent)' : 'var(--text-dim)'}">
-        ${selectedComp.value ? 'HIGH (1)' : 'LOW (0)'}
-      </div>
-    </div>`;
-
-  if (selectedComp.type === 'input') {
-    html += `<button class="btn-action" onclick="toggleSelectedInput()">Toggle Value</button>`;
-  }
-
-  html += `<button class="btn-action btn-danger" onclick="deleteSelectedComponent()">Delete Component</button>`;
-
-  el.innerHTML = html;
-
-  const labelInput = document.getElementById('prop-label-input');
-  if (labelInput) {
-    labelInput.addEventListener('input', (e) => {
-      if (selectedComp) {
-        selectedComp.label = e.target.value;
-        render();
-      }
-    });
-  }
-}
-
-function toggleSelectedInput() {
-  if (selectedComp && selectedComp.type === 'input') {
-    selectedComp.value = !selectedComp.value;
-    pushUndo();
-    simulate();
-  }
-}
-
-function deleteSelectedComponent() {
-  if (!selectedComp) return;
-  pushUndo();
-  components = components.filter(c => c !== selectedComp);
-  wires = wires.filter(w => w.from.c !== selectedComp && w.to.c !== selectedComp);
-  selectedComp = null;
+function loadExample(key) {
+  const example = EXAMPLES[key];
+  if (!example) return;
+  clearWorkspace();
+  example.build();
+  currentExampleKey = key;
+  selectedComp = components.find(component => component.type === 'output') || components[0] || null;
+  setMode('props');
   simulate();
 }
 
-function renderTruthTablePanel() {
-  const el = getModeContentEl();
-  const ins = components.filter(c => c.type === 'input');
-  const outs = components.filter(c => c.type === 'output');
-
-  if (!ins.length || !outs.length) {
-    el.innerHTML = `<div class="empty-state"><p>Truth Table requires at least 1 Input and 1 Output component on the canvas.</p></div>`;
-    return;
-  }
-
-  if (ins.length > 8) {
-    el.innerHTML = `<div class="empty-state"><p>Truth Table is limited to 8 or fewer inputs.</p></div>`;
-    return;
-  }
-
-  const originalValues = ins.map(i => i.value);
-  const rowCount = 1 << ins.length;
-
-  let tableHtml = '<div style="overflow-x: auto;"><table id="truth-table-view"><thead><tr>';
-  ins.forEach(i => { tableHtml += `<th>${escapeHtml(i.label)}</th>`; });
-  outs.forEach(o => { tableHtml += `<th style="color:var(--accent);">${escapeHtml(o.label)}</th>`; });
-  tableHtml += '</tr></thead><tbody>';
-
-  let currentPattern = 0;
-  ins.forEach((input, idx) => {
-    if (input.value) currentPattern |= (1 << (ins.length - 1 - idx));
-  });
-
-  for (let r = 0; r < rowCount; r++) {
-    const isCurrent = (r === currentPattern);
-    tableHtml += `<tr class="${isCurrent ? 'current-row' : ''}">`;
-
-    ins.forEach((input, idx) => {
-      const bit = (r >> (ins.length - 1 - idx)) & 1;
-      input.value = !!bit;
-      tableHtml += `<td class="${bit ? 'active-bit' : ''}">${bit}</td>`;
-    });
-
-    for (let k = 0; k < 6; k++) {
-      wires.forEach(w => { w.to.c.inputs[w.to.p] = w.from.c.value; });
-      components.forEach(c => { if (c.type !== 'input') c.eval(); });
-    }
-
-    outs.forEach(out => {
-      const bit = out.value ? 1 : 0;
-      tableHtml += `<td class="${bit ? 'active-bit' : ''}">${bit}</td>`;
-    });
-
-    tableHtml += '</tr>';
-  }
-
-  tableHtml += '</tbody></table></div>';
-
-  ins.forEach((input, idx) => { input.value = originalValues[idx]; });
-  for (let k = 0; k < 6; k++) {
-    wires.forEach(w => { w.to.c.inputs[w.to.p] = w.from.c.value; });
-    components.forEach(c => c.eval());
-  }
-
-  el.innerHTML = tableHtml;
-}
-
-function updateUI() {
-  if (counts) {
-    const errorCount = getErrorWires().length;
-    let text = `Gates: ${components.length} &nbsp;&nbsp; Wires: ${wires.length}`;
-    if (errorCount > 0) {
-      text += ` &nbsp;&nbsp; <span style="color:var(--wire-error);">Errors: ${errorCount}</span>`;
-    }
-    counts.innerHTML = text;
-  }
-
-  const zoomInd = document.getElementById('zoom-indicator');
-  if (zoomInd) {
-    zoomInd.textContent = `Zoom: ${Math.round(zoomLevel * 100)}%`;
-  }
-
-  updateUndoRedoButtons();
-
-  if (currentMode === 'examples') renderExampleBrowser();
-  else if (currentMode === 'challenges') renderChallengeBrowser();
-  else if (currentMode === 'props') renderPropertiesPanel();
-  else if (currentMode === 'tt') renderTruthTablePanel();
-}
+window.loadExample = loadExample;
 
 function simulate() {
-  components.forEach(c => { if (c.type !== 'input') c.inputs = []; });
-  for (let k = 0; k < 6; k++) {
-    wires.forEach(w => {
-      if (w.from.c && w.to.c) {
-        w.to.c.inputs[w.to.p] = w.from.c.value;
-      }
-    });
+  for(let i=0; i<5; i++) {
+    wires.forEach(w => w.to.c.inputs[w.to.p] = w.from.c.value);
     components.forEach(c => c.eval());
   }
-  render();
-  updateUI();
+  updateUI(); render();
 }
 
 function render() {
-  const dpr = window.devicePixelRatio || 1;
   ctx.setTransform(1, 0, 0, 1, 0, 0);
   ctx.clearRect(0, 0, canvas.width, canvas.height);
-
+  
+  // Update zoom indicator
+  const zoomIndicator = document.getElementById('zoom-indicator');
+  if (zoomIndicator) {
+    zoomIndicator.textContent = `Zoom: ${Math.round(zoomLevel * 100)}%`;
+  }
+  
   ctx.save();
-  ctx.scale(dpr, dpr);
   ctx.translate(panX, panY);
   ctx.scale(zoomLevel, zoomLevel);
-
+  
+  const errorWires = getErrorWires();
+  
+  // Wires (Bezier)
   wires.forEach(w => {
-    if (!w.from.c || !w.to.c) return;
-    const p1 = w.from.c.getOutPos();
-    const p2 = w.to.c.getInPos(w.to.p);
-
-    const isValid = validateWire(w);
-    const isActive = w.from.c.value;
-
-    ctx.strokeStyle = !isValid
-      ? cssVar('--wire-error')
-      : (isActive ? cssVar('--accent') : cssVar('--wire-off'));
-    ctx.lineWidth = isActive ? 2.5 : 2;
-
-    const dx = Math.abs(p2.x - p1.x) / 2;
-    const cp = Math.max(dx, 30);
-
-    ctx.beginPath();
-    ctx.moveTo(p1.x, p1.y);
-    ctx.bezierCurveTo(p1.x + cp, p1.y, p2.x - cp, p2.y, p2.x, p2.y);
+    let p1 = w.from.c.getOutPos(), p2 = w.to.c.getInPos(w.to.p);
+    ctx.beginPath(); ctx.moveTo(p1.x, p1.y);
+    let cp = Math.max(Math.abs(p2.x - p1.x)/2, 30);
+    ctx.bezierCurveTo(p1.x+cp, p1.y, p2.x-cp, p2.y, p2.x, p2.y);
+    
+    const isError = errorWires.includes(w);
+    ctx.lineWidth = isError ? 3 : 2;
+    ctx.strokeStyle = isError ? cssVar('--wire-error') : (w.from.c.value ? cssVar('--accent') : cssVar('--wire-off'));
     ctx.stroke();
   });
-
-  if (connectingFrom) {
-    const p1 = connectingFrom.pos;
-    const p2 = mouseWorldPos;
-    ctx.strokeStyle = cssVar('--wire-preview');
-    ctx.lineWidth = 2;
-    ctx.setLineDash([4, 4]);
-    ctx.beginPath();
-    ctx.moveTo(p1.x, p1.y);
-    ctx.lineTo(p2.x, p2.y);
-    ctx.stroke();
-    ctx.setLineDash([]);
+  
+  if(connectingFrom && Number.isFinite(window.mx) && Number.isFinite(window.my)) {
+    let p1 = connectingFrom.c.getOutPos();
+    ctx.beginPath(); ctx.moveTo(p1.x, p1.y); ctx.lineTo(window.mx, window.my);
+    ctx.lineWidth = 1.5; ctx.strokeStyle = cssVar('--wire-preview'); ctx.stroke();
   }
 
   components.forEach(c => c.draw());
-
+  
   ctx.restore();
 }
 
 // ────────────────────────────────────────────────
-// Event Handling & Interaction Logic
+// Interaction
 // ────────────────────────────────────────────────
+let mx=0, my=0;
+window.mx = 0;
+window.my = 0;
 
-// Transforms screen mouse/touch coordinates into world canvas coordinates
-function getEventWorldPos(e) {
+let dragOffsetX = 0, dragOffsetY = 0;
+let dragStartX = 0, dragStartY = 0;
+
+function getCanvasPoint(clientX, clientY) {
   const rect = canvas.getBoundingClientRect();
-  const clientX = (e.touches && e.touches.length > 0) ? e.touches[0].clientX : e.clientX;
-  const clientY = (e.touches && e.touches.length > 0) ? e.touches[0].clientY : e.clientY;
-  const screenX = clientX - rect.left;
-  const screenY = clientY - rect.top;
+  const rawX = clientX - rect.left;
+  const rawY = clientY - rect.top;
   return {
-    x: (screenX - panX) / zoomLevel,
-    y: (screenY - panY) / zoomLevel,
-    screenX,
-    screenY
+    rawX,
+    rawY,
+    worldX: (rawX - panX) / zoomLevel,
+    worldY: (rawY - panY) / zoomLevel
   };
 }
 
-function getComponentAt(wx, wy) {
-  for (let i = components.length - 1; i >= 0; i--) {
-    const c = components[i];
-    if (wx >= c.x - 4 && wx <= c.x + c.w + 4 && wy >= c.y - 4 && wy <= c.y + c.h + 4) {
-      return c;
-    }
-  }
-  return null;
+function applyZoom(nextZoom, clientX, clientY) {
+  const oldZoom = zoomLevel;
+  zoomLevel = Math.max(0.5, Math.min(3, nextZoom));
+  if (zoomLevel === oldZoom) return;
+
+  const rect = canvas.getBoundingClientRect();
+  const anchorX = clientX ?? (rect.left + rect.width / 2);
+  const anchorY = clientY ?? (rect.top + rect.height / 2);
+  const mouseX = anchorX - rect.left;
+  const mouseY = anchorY - rect.top;
+
+  panX = mouseX - (mouseX - panX) * (zoomLevel / oldZoom);
+  panY = mouseY - (mouseY - panY) * (zoomLevel / oldZoom);
 }
 
-function getPortAt(wx, wy) {
-  const radius = 12 / zoomLevel;
-
-  for (let i = components.length - 1; i >= 0; i--) {
-    const c = components[i];
-
-    if (c.outPorts) {
-      const p = c.getOutPos();
-      if (Math.hypot(wx - p.x, wy - p.y) <= radius) {
-        return { component: c, type: 'out', portIndex: 0, pos: p };
-      }
-    }
-
-    for (let j = 0; j < c.inPorts; j++) {
-      const p = c.getInPos(j);
-      if (Math.hypot(wx - p.x, wy - p.y) <= radius) {
-        return { component: c, type: 'in', portIndex: j, pos: p };
-      }
-    }
-  }
-  return null;
+function stepZoom(delta, clientX, clientY) {
+  applyZoom(zoomLevel + delta, clientX, clientY);
+  render();
 }
 
-function handlePointerDown(e) {
-  if (e.button !== undefined && e.button !== 0) return;
+function placeGateAtViewportCenter(type) {
+  container.scrollIntoView({ behavior: 'smooth', block: 'center' });
+  const rect = canvas.getBoundingClientRect();
+  const point = getCanvasPoint(rect.left + rect.width / 2, rect.top + rect.height / 2);
+  pushUndo();
+  const gate = new Gate(type, point.worldX - 45, point.worldY - 28);
+  components.push(gate);
+  selectedComp = gate;
+  setMode('props');
+  simulate();
+}
 
-  const pos = getEventWorldPos(e);
-  mouseWorldPos = { x: pos.x, y: pos.y };
-  startPointerPos = { x: pos.screenX, y: pos.screenY };
-  isPointerDown = true;
-  hasDragged = false;
+function handlePointerDown(clientX, clientY, button = 0) {
+  const point = getCanvasPoint(clientX, clientY);
+  const rawX = point.rawX;
+  const rawY = point.rawY;
+  const mx = point.worldX;
+  const my = point.worldY;
 
-  // 1. Check if delete badge was clicked on selected component
+  if (button !== 0) return;
+
+  window.mx = mx;
+  window.my = my;
+
   if (selectedComp) {
     const del = selectedComp.getDeleteBadgePos();
-    if (Math.hypot(pos.x - del.x, pos.y - del.y) <= del.r + 4) {
-      deleteSelectedComponent();
-      isPointerDown = false;
+    if (Math.hypot(mx - del.x, my - del.y) <= del.r + 2) {
+      pushUndo();
+      removeComponent(selectedComp);
       return;
     }
   }
 
-  // 2. Check port click for wiring
-  const port = getPortAt(pos.x, pos.y);
-  if (port) {
-    connectingFrom = port;
-    render();
-    return;
+  for (let c of components) {
+    if (c.type !== 'input' && c.outPorts && Math.hypot(mx - c.getOutPos().x, my - c.getOutPos().y) < 12) {
+      connectingFrom = { c, p: 0 };
+      render();
+      return;
+    }
   }
 
-  // 3. Check component click
-  const comp = getComponentAt(pos.x, pos.y);
-  if (comp) {
-    selectedComp = comp;
-    draggedComp = comp;
-    dragOffX = pos.x - comp.x;
-    dragOffY = pos.y - comp.y;
-    updateUI();
-    render();
-    return;
+  for (let w of wires) {
+    if (isPointNearWire(mx, my, w)) {
+      pushUndo();
+      wires = wires.filter(wire => wire !== w);
+      simulate();
+      render();
+      return;
+    }
   }
 
-  // 4. Clicked empty background -> Deselect and enable canvas panning
-  selectedComp = null;
-  connectingFrom = null;
+  for (let i = components.length - 1; i >= 0; i--) {
+    let c = components[i];
+    const hitPadding = c.type === 'input' ? 10 : 0;
+    if (mx > c.x - hitPadding && mx < c.x + c.w + hitPadding && my > c.y - hitPadding && my < c.y + c.h + hitPadding) {
+      if (c.type === 'input') {
+        pushUndo();
+        c.value = !c.value;
+        simulate();
+      }
+      selectedComp = c;
+      draggedComp = c;
+      dragOffX = mx - c.x;
+      dragOffY = my - c.y;
+      dragStartX = c.x;
+      dragStartY = c.y;
+      updateUI();
+      render();
+      return;
+    }
+  }
+
   isPanning = true;
-  panStartX = pos.screenX - panX;
-  panStartY = pos.screenY - panY;
+  panStartX = rawX;
+  panStartY = rawY;
+  selectedComp = null;
   updateUI();
   render();
 }
 
-function handlePointerMove(e) {
-  const pos = getEventWorldPos(e);
-  mouseWorldPos = { x: pos.x, y: pos.y };
+function handlePointerMove(clientX, clientY) {
+  const point = getCanvasPoint(clientX, clientY);
+  const rawX = point.rawX;
+  const rawY = point.rawY;
+  const mx = point.worldX;
+  const my = point.worldY;
 
-  if (isPointerDown) {
-    const dist = Math.hypot(pos.screenX - startPointerPos.x, pos.screenY - startPointerPos.y);
-    if (dist > 4) {
-      hasDragged = true;
-    }
+  if (isPanning) {
+    panX += (rawX - panStartX);
+    panY += (rawY - panStartY);
+    panStartX = rawX;
+    panStartY = rawY;
+    render();
+    return;
   }
 
+  window.mx = mx;
+  window.my = my;
   if (draggedComp) {
-    draggedComp.x = pos.x - dragOffX;
-    draggedComp.y = pos.y - dragOffY;
-    render();
-  } else if (isPanning) {
-    panX = pos.screenX - panStartX;
-    panY = pos.screenY - panStartY;
-    render();
-  } else if (connectingFrom) {
+    draggedComp.x = mx - dragOffX;
+    draggedComp.y = my - dragOffY;
     render();
   }
+  if (connectingFrom) render();
 }
 
-function handlePointerUp(e) {
-  if (!isPointerDown) return;
-
-  const pos = getEventWorldPos(e);
-
+function handlePointerUp() {
+  isPanning = false;
+  if (draggedComp) {
+    if (Math.abs(draggedComp.x - dragStartX) > 2 || Math.abs(draggedComp.y - dragStartY) > 2) {
+      const moved = draggedComp;
+      const finalX = moved.x;
+      const finalY = moved.y;
+      moved.x = dragStartX;
+      moved.y = dragStartY;
+      pushUndo();
+      moved.x = finalX;
+      moved.y = finalY;
+    }
+  }
+  draggedComp = null;
   if (connectingFrom) {
-    const targetPort = getPortAt(pos.x, pos.y);
-    if (targetPort && targetPort.component !== connectingFrom.component) {
-      let fromPort = null, toPort = null;
-      if (connectingFrom.type === 'out' && targetPort.type === 'in') {
-        fromPort = connectingFrom;
-        toPort = targetPort;
-      } else if (connectingFrom.type === 'in' && targetPort.type === 'out') {
-        fromPort = targetPort;
-        toPort = connectingFrom;
+    let wireCreated = false;
+    for (let c of components) {
+      for (let i = 0; i < c.inPorts; i++) {
+        let p = c.getInPos(i);
+        if (Math.hypot(window.mx - p.x, window.my - p.y) < 12) {
+          pushUndo();
+          wires = wires.filter(w => !(w.to.c === c && w.to.p === i));
+          wires.push({ from: connectingFrom, to: { c, p: i } });
+          wireCreated = true;
+          break;
+        }
       }
-
-      if (fromPort && toPort) {
-        wires = wires.filter(w => !(w.to.c === toPort.component && w.to.p === toPort.portIndex));
-        wires.push({
-          from: { c: fromPort.component, p: fromPort.portIndex },
-          to: { c: toPort.component, p: toPort.portIndex }
-        });
-        pushUndo();
-        simulate();
-      }
+      if (wireCreated) break;
     }
     connectingFrom = null;
-    render();
-  } else if (draggedComp) {
-    if (!hasDragged && draggedComp.type === 'input') {
-      // Direct click on input component -> Toggle Logic State (0 <-> 1)
-      draggedComp.value = !draggedComp.value;
-      pushUndo();
+    if (wireCreated) {
       simulate();
-    } else if (hasDragged) {
-      pushUndo();
+    } else {
+      render();
     }
-    draggedComp = null;
   }
-
-  isPanning = false;
-  isPointerDown = false;
-  hasDragged = false;
 }
 
-// Bind Canvas Event Listeners
-canvas.addEventListener('mousedown', handlePointerDown);
-window.addEventListener('mousemove', handlePointerMove);
-window.addEventListener('mouseup', handlePointerUp);
-
-canvas.addEventListener('touchstart', (e) => {
-  e.preventDefault();
-  handlePointerDown(e);
-}, { passive: false });
-
-window.addEventListener('touchmove', (e) => {
-  if (isPointerDown) {
-    handlePointerMove(e);
-  }
-}, { passive: false });
-
-window.addEventListener('touchend', (e) => {
-  handlePointerUp(e);
-});
-
-// Drag and Drop from Left Panel
-const gateTools = document.querySelectorAll('.gate-tool');
-gateTools.forEach(tool => {
-  tool.addEventListener('dragstart', (e) => {
-    e.dataTransfer.setData('text/plain', tool.dataset.type);
-  });
-
-  tool.addEventListener('click', () => {
-    const type = tool.dataset.type;
-    if (usesTapToAdd()) {
-      pushUndo();
-      const rect = canvas.getBoundingClientRect();
-      const cx = (rect.width / 2 - panX) / zoomLevel;
-      const cy = (rect.height / 2 - panY) / zoomLevel;
-      const g = createGate(type, cx - 45, cy - 25);
-      selectedComp = g;
-      simulate();
-    }
-  });
-});
-
-container.addEventListener('dragover', (e) => {
-  e.preventDefault();
-  e.dataTransfer.dropEffect = 'copy';
-});
-
-container.addEventListener('drop', (e) => {
-  e.preventDefault();
-  const type = e.dataTransfer.getData('text/plain');
-  if (!type) return;
-
+container.addEventListener('dragover', e=>e.preventDefault());
+container.addEventListener('drop', e=> {
+  let t = e.dataTransfer.getData('text'); if(!t) return;
+  let r = canvas.getBoundingClientRect();
+  let screenX = e.clientX - r.left - dragOffsetX;
+  let screenY = e.clientY - r.top - dragOffsetY;
+  let worldX = (screenX - panX) / zoomLevel;
+  let worldY = (screenY - panY) / zoomLevel;
   pushUndo();
-  const pos = getEventWorldPos(e);
-  const gate = createGate(type, pos.x - 45, pos.y - 25);
-  selectedComp = gate;
+  components.push(new Gate(t, worldX, worldY));
   simulate();
 });
-
-// UI Navigation Bindings
-if (navButtons.examples) navButtons.examples.addEventListener('click', () => setMode('examples'));
-if (navButtons.challenges) navButtons.challenges.addEventListener('click', () => setMode('challenges'));
-if (navButtons.props) navButtons.props.addEventListener('click', () => setMode('props'));
-if (navButtons.tt) navButtons.tt.addEventListener('click', () => setMode('tt'));
-
-if (btnTheme) btnTheme.addEventListener('click', () => {
-  const isLight = document.body.classList.contains('light-mode');
-  setTheme(isLight ? 'dark' : 'light');
+document.querySelectorAll('.gate-tool').forEach(t => {
+  t.ondragstart = e => {
+    if (usesTapToAdd()) {
+      e.preventDefault();
+      return false;
+    }
+    const rect = t.getBoundingClientRect();
+    dragOffsetX = e.clientX - rect.left;
+    dragOffsetY = e.clientY - rect.top;
+    e.dataTransfer.setData('text', t.dataset.type);
+  };
+  t.addEventListener('click', () => {
+    if (usesTapToAdd()) placeGateAtViewportCenter(t.dataset.type);
+  });
 });
 
-if (btnRightPanelToggle) btnRightPanelToggle.addEventListener('click', () => {
-  const collapsed = !rightPanel.classList.contains('collapsed');
-  setRightPanelCollapsed(collapsed);
-});
-if (btnRightPanelShow) btnRightPanelShow.addEventListener('click', () => setRightPanelCollapsed(false));
-if (btnComponentsToggle) btnComponentsToggle.addEventListener('click', () => {
-  const collapsed = !leftPanel.classList.contains('collapsed');
-  setComponentsCollapsed(collapsed);
+canvas.addEventListener('pointerdown', e => {
+  if (!e.isPrimary) return;
+  activePointerId = e.pointerId;
+  canvas.setPointerCapture(e.pointerId);
+  if (e.pointerType !== 'mouse') e.preventDefault();
+  handlePointerDown(e.clientX, e.clientY, e.button ?? 0);
 });
 
-const btnClear = document.getElementById('btn-clear');
-if (btnClear) btnClear.addEventListener('click', () => {
-  if (components.length === 0 || confirm('Are you sure you want to clear the canvas?')) {
-    pushUndo();
-    clearWorkspace();
-    simulate();
+canvas.addEventListener('pointermove', e => {
+  if (!e.isPrimary || activePointerId !== e.pointerId) return;
+  if (e.pointerType !== 'mouse') e.preventDefault();
+  handlePointerMove(e.clientX, e.clientY);
+});
+
+const releasePointerInteraction = e => {
+  if (!e.isPrimary || activePointerId !== e.pointerId) return;
+  handlePointerUp();
+  if (canvas.hasPointerCapture && canvas.hasPointerCapture(e.pointerId)) {
+    canvas.releasePointerCapture(e.pointerId);
   }
+  activePointerId = null;
+};
+
+canvas.addEventListener('pointerup', releasePointerInteraction);
+canvas.addEventListener('pointercancel', releasePointerInteraction);
+
+canvas.onwheel = e => {
+  e.preventDefault();
+  stepZoom(e.deltaY > 0 ? -0.1 : 0.1, e.clientX, e.clientY);
+};
+canvas.oncontextmenu = e => e.preventDefault();
+
+if (btnZoomIn) {
+  btnZoomIn.addEventListener('click', () => stepZoom(0.1));
+}
+if (btnZoomOut) {
+  btnZoomOut.addEventListener('click', () => stepZoom(-0.1));
+}
+if (btnZoomReset) {
+  btnZoomReset.addEventListener('click', () => {
+    applyZoom(1);
+    panX = 0;
+    panY = 0;
+    render();
+  });
+}
+
+mobileSectionButtons.forEach(button => {
+  button.addEventListener('click', () => {
+    handleMobileSectionAction(button.dataset.mobileSection);
+  });
 });
 
-const btnUndo = document.getElementById('btn-undo');
-const btnRedo = document.getElementById('btn-redo');
-if (btnUndo) btnUndo.addEventListener('click', performUndo);
-if (btnRedo) btnRedo.addEventListener('click', performRedo);
+if (btnComponentsToggle) {
+  btnComponentsToggle.addEventListener('click', () => {
+    const isCollapsed = leftPanel && leftPanel.classList.contains('collapsed');
+    setComponentsCollapsed(!isCollapsed);
+  });
+}
 
-window.addEventListener('keydown', (e) => {
-  if (e.target.tagName === 'INPUT' || e.target.tagName === 'TEXTAREA') return;
-  if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'z') {
-    if (e.shiftKey) performRedo();
-    else performUndo();
-    e.preventDefault();
-  } else if ((e.ctrlKey || e.metaKey) && e.key.toLowerCase() === 'y') {
-    performRedo();
-    e.preventDefault();
-  } else if (e.key === 'Delete' || e.key === 'Backspace') {
-    if (selectedComp) {
-      deleteSelectedComponent();
+if (btnRightPanelToggle) {
+  btnRightPanelToggle.addEventListener('click', () => {
+    const isCollapsed = rightPanel && rightPanel.classList.contains('collapsed');
+    setRightPanelCollapsed(!isCollapsed);
+  });
+}
+
+if (btnRightPanelShow) {
+  btnRightPanelShow.addEventListener('click', () => setRightPanelCollapsed(false));
+}
+
+// ────────────────────────────────────────────────
+// UI Updates
+// ────────────────────────────────────────────────
+function updateUI() {
+  const exampleSuffix = currentExampleKey ? ` &nbsp;&nbsp; Example: ${EXAMPLES[currentExampleKey].title}` : '';
+  const score = calculateScore();
+  const scoreSuffix = score.errors > 0 ? ` &nbsp;&nbsp; ⚠ ${score.errors} error(s)` : ` &nbsp;&nbsp; Efficiency: ${score.score}%`;
+  counts.innerHTML = `Gates: ${score.gates} &nbsp;&nbsp; Wires: ${score.wires}${scoreSuffix}${exampleSuffix}`;
+
+  if (currentMode === 'examples') {
+    renderExampleBrowser();
+    return;
+  }
+
+  if (currentMode === 'challenges') {
+    renderChallengeBrowser();
+    return;
+  }
+
+  if (currentMode === 'props') {
+    if(!selectedComp) {
+      getModeContentEl().innerHTML = '<div class="empty-state">Select a gate to view properties, or open Examples to load a prepared circuit.</div>';
+      return;
+    }
+    getModeContentEl().innerHTML = `
+      <div class="prop-group"><div class="prop-label">ID</div><div class="prop-value">${selectedComp.id}</div></div>
+      <div class="prop-group"><div class="prop-label">Label</div>
+        <input class="prop-input" id="inp-label" value="${selectedComp.label}" onkeyup="updateLabel(event)">
+      </div>
+      <button class="btn-action btn-danger" onclick="delSelected()">Delete Component</button>
+    `;
+    return;
+  }
+
+  let ins = components.filter(c=>c.type==='input'), outs = components.filter(c=>c.type==='output');
+  if(!ins.length || !outs.length) { getModeContentEl().innerHTML='<div class="empty-state">Requires at least 1 input and 1 output.</div>'; return; }
+  
+  let html = '<div class="table-responsive"><table id="truth-table-view" class="align-middle"><thead><tr>';
+  ins.forEach(i => html+=`<th>${i.label}</th>`); outs.forEach(o => html+=`<th>${o.label}</th>`);
+  html += '</tr></thead><tbody>';
+
+  let orig = ins.map(i=>i.value);
+  let currentRow = orig.reduce((acc, v, idx) => acc | ((v?1:0) << (ins.length-1-idx)), 0);
+  let rows = 1<<ins.length;
+  for(let r=0; r<rows; r++) {
+    html += r===currentRow ? '<tr class="current-row">' : '<tr>';
+    ins.forEach((c, idx) => {
+      let bit = (r >> (ins.length-1-idx)) & 1; c.value = !!bit;
+      html += `<td class="${bit?'active-bit':''}">${bit}</td>`;
+    });
+    for(let j=0; j<5; j++) { wires.forEach(w=>w.to.c.inputs[w.to.p]=w.from.c.value); components.forEach(c=> {if(c.type!=='input')c.eval()}); }
+    outs.forEach(o => { let v = o.value?1:0; html += `<td class="${v?'active-bit':''}">${v}</td>`; });
+    html+='</tr>';
+  }
+  ins.forEach((c, idx) => c.value = orig[idx]);
+  for(let k=0; k<5; k++) { wires.forEach(w=>w.to.c.inputs[w.to.p]=w.from.c.value); components.forEach(c=>c.eval()); }
+  getModeContentEl().innerHTML = html + '</tbody></table></div>';
+}
+
+window.updateLabel = e => { if(selectedComp && e.key==='Enter') { selectedComp.label = e.target.value; render(); } };
+function removeComponent(comp) {
+  if (!comp) return false;
+  components = components.filter(c => c !== comp);
+  wires = wires.filter(w => w.from.c !== comp && w.to.c !== comp);
+  if (selectedComp === comp) selectedComp = null;
+  simulate();
+  return true;
+}
+
+window.delSelected = () => removeComponent(selectedComp);
+
+navButtons.examples.onclick = () => setMode('examples');
+navButtons.challenges.onclick = () => setMode('challenges');
+navButtons.props.onclick = () => setMode('props');
+navButtons.tt.onclick = () => setMode('tt');
+btnTheme.onclick = () => setTheme(document.body.classList.contains('light-mode') ? 'dark' : 'light');
+document.getElementById('btn-undo').onclick = () => performUndo();
+document.getElementById('btn-redo').onclick = () => performRedo();
+document.getElementById('btn-clear').onclick = () => {
+  pushUndo();
+  clearWorkspace();
+  currentExampleKey = null;
+  simulate();
+};
+
+window.addEventListener('keydown', e => {
+  const targetTag = (e.target && e.target.tagName) ? e.target.tagName.toLowerCase() : '';
+  const typingInField = targetTag === 'input' || targetTag === 'textarea';
+  if (typingInField) return;
+
+  if (e.key === 'Delete' || e.key === 'Backspace') {
+    if (selectedComp) pushUndo();
+    if (window.delSelected()) {
       e.preventDefault();
     }
   }
+  if ((e.ctrlKey || e.metaKey) && !e.shiftKey && e.key === 'z') {
+    e.preventDefault();
+    performUndo();
+  }
+  if ((e.ctrlKey || e.metaKey) && (e.key === 'y' || (e.shiftKey && e.key === 'z'))) {
+    e.preventDefault();
+    performRedo();
+  }
 });
 
-if (btnZoomIn) btnZoomIn.addEventListener('click', () => {
-  zoomLevel = Math.min(zoomLevel * 1.2, 3);
-  render(); updateUI();
-});
-if (btnZoomOut) btnZoomOut.addEventListener('click', () => {
-  zoomLevel = Math.max(zoomLevel / 1.2, 0.4);
-  render(); updateUI();
-});
-if (btnZoomReset) btnZoomReset.addEventListener('click', () => {
-  zoomLevel = 1; panX = 0; panY = 0;
-  render(); updateUI();
-});
-
-container.addEventListener('wheel', (e) => {
-  e.preventDefault();
-  const rect = canvas.getBoundingClientRect();
-  const mouseX = e.clientX - rect.left;
-  const mouseY = e.clientY - rect.top;
-
-  const zoomFactor = e.deltaY < 0 ? 1.1 : 0.9;
-  const newZoom = Math.max(0.4, Math.min(3, zoomLevel * zoomFactor));
-
-  panX = mouseX - (mouseX - panX) * (newZoom / zoomLevel);
-  panY = mouseY - (mouseY - panY) * (newZoom / zoomLevel);
-  zoomLevel = newZoom;
-
-  render();
-  updateUI();
-}, { passive: false });
-
-mobileSectionButtons.forEach(btn => {
-  btn.addEventListener('click', () => handleMobileSectionAction(btn.dataset.mobileSection));
-});
-
-window.startChallenge = startChallenge;
-window.loadExample = loadExample;
-window.toggleSelectedInput = toggleSelectedInput;
-window.deleteSelectedComponent = deleteSelectedComponent;
-
-// App Initialization
-initTheme();
-resize();
-loadFromURL();
-if (components.length === 0) {
-  loadExample('and');
-} else {
-  simulate();
-}
-showWelcomeModal();
+setTimeout(resize, 100);
+setTimeout(() => {
+  initTheme();
+  setComponentsCollapsed(false);
+  updateInteractionHint();
+  loadFromURL();
+  if (!currentExampleKey) setMode('examples');
+  syncMobileQuickButtons('components');
+  showWelcomeModal();
+}, 120);
 </script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
 </body>
 </html>
