@@ -2726,7 +2726,7 @@ function handlePointerDown(clientX, clientY, button = 0) {
   }
 
   for (let c of components) {
-    if (c.outPorts && Math.hypot(mx - c.getOutPos().x, my - c.getOutPos().y) < 12) {
+    if (c.type !== 'input' && c.outPorts && Math.hypot(mx - c.getOutPos().x, my - c.getOutPos().y) < 12) {
       connectingFrom = { c, p: 0 };
       render();
       return;
